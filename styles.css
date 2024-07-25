@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: rgb(223, 223, 223);
+    font-family: "League Spartan", sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side {
+    grid-area: left-side;
+}
+
+.right-side {
+    grid-area: right-side;
+}
+
+main {
+    display: grid;
+    padding: 6rem ;
+    grid-template-areas: 
+        ". . . . . . . ."
+        ". . . left-side right-side . . ."
+        ". . . . . . . ."
+    ;
+}
+
+.left-side, .right-side {
+    display: flex;
+    flex-direction: column;
+    padding: 7rem 5rem;
+    box-shadow: rgba(14, 30, 37, 0.10) 0px 2px 4px 0px, rgba(14, 30, 37, 0.10) 0px 2px 16px 0px;
+}
+
+.left-side {
+    background-color: white;
+    border-top-left-radius: 2rem;
+    align-items: center;
+    border-bottom-left-radius: 2rem;
+    gap: 1rem;
+}
+
+.left-side h1 {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    font-weight: 800;
+}
+
+.left-side h3, .left-side h2 {
+    font-weight: 700;
+    color: rgb(92, 92, 92);
+}
+
+.left-side h2 {
+    cursor: pointer;
+}
+
+.left-side .sync {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: .5rem;
+}
+
+.left-side .sync div {
+    box-shadow: rgba(14, 30, 37, 0.20) 0px 2px 4px 0px, rgba(14, 30, 37, 0.20) 0px 2px 16px 0px;
+    border-radius: 50%;
+    padding: .7em;
+}
+
+.left-side .sync img {
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.left-side input {
+    border: 0;
+    padding-left: 1.1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: .5rem;
+    width: 30rem;
+    font-weight: 500;
+    font-size: 1.3rem;
+    background-color:  rgb(207, 207, 207);
+}
+
+.left-side button {
+    border: 0;
+    background-color: rgb(0, 110, 110);
+    color: white;
+    padding: .7rem 5rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+.right-side {
+    color: white;
+    background-color: rgb(0, 110, 110);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+}
+
+.right-side h1 {
+    font-size: 3.3rem;
+    font-weight: 800;
+}
+
+.right-side h4 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    max-width: 22rem;
+    text-align: center;
+}
+
+.right-side button {
+    background-color: rgb(0, 110, 110);
+    border: 1px solid white;
+    font-weight: 600;
+    border-radius: 2.5rem;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+}
